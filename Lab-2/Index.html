@@ -1,146 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Skip Link to main content -->
-    <a href="#main-content">Skip to main content</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Header and Navigation -->
+ <!-- Header with navigation -->
     <header>
-      <h1>Parth Singh</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <h1>Parth Singh</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>    
+        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content">
-      <!-- Hero Section -->
-      <section id="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>
-          Hello, I'm Parth Singh, a passionate developer creating web. Take a look at what I've done!
-        </p>
-      </section>
+<!-- Main content starts -->
+    <main>
+        <section id="Hero">
+            <h2>Welcome to My Project</h2>
+            <p>Hello, I'm Parth Singh, a passionate developer creating web. Take a look at what I've done!</p>
+        </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <img src="Photo.jpeg" alt="Parth's Photo" height="250" />
-        <p>
-           I am Student of B.tech Computer Science(AL&ML) At K.R Mangalam University who loves building tools that help people.
-        </p>
-      </section>
+<!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="Photo.jpeg" alt="Profile Picture" height="300px">
+            <p>I am Student of B.tech Computer Science(AL&ML) At K.R Mangalam University who loves building tools that help people.</p>
+        </section>
 
-      <!-- Projects Section -->
-      <section id="projects">
-        <h2>My Projects</h2>
+<!-- Projects Section -->
+        <section id="project">
+            <h2>My Projects</h2>
+            <article>
+                <ul>
+                    <li><b>Daily Calorie Meter:-</b> A Python-based command-line tool that helps users track daily food intake and calorie consumption with session saving feature.</li>
+                </ul>
+            </article>
+            <article>
+                <ul>
+                    <li><b>Portfolio Website:-</b> This one-page semantic HTML portfolio site structured for accessibility and future CSS enhancements.</li>
+                </ul>
+            </article>
+            <article>
+                <ul>
+                    <li><b> Quiz App:-</b> A simple interactive quiz application using HTML, CSS, and JavaScript to test users on basic programming knowledge.</li>
+                </ul>
+            </article>
+        </section>
+        
+<!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <table border="2" cellspacing="5" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>Skills</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Advanced</td>    
+                    </tr>
 
-        <article>
-          <h3>Audio/Video Player Page</h3>
-          <p>
-            I used audio and video tags and set controls so user can play/pause.
-          </p>
-        </article>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>
+                    </tr>
 
-        <article>
-          <h3>Portfolio Website</h3>
-          <p>
-            A personal portfolio site using semantic HTML and accessible markup.
-          </p>
-        </article>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <article>
-          <h3>Contact page</h3>
-          <p>
-            A form webpage with fields like name, email and message for
-            practicing form handling.
-          </p>
-        </article>
-      </section>
+<!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">
+                    Name:
+                    <input type="text" id="name" name="name" placeholder="Your full name">
+                </label>
+                <br>
+                <br>
+                <label for="email">
+                    Email:
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </label>
+                <br>
+                <br>
+                <label for="message">Message:
+                <textarea id="message" name="message" placeholder="Write your message......"></textarea>
+                </label>
+                <br>
+                <br>
+                <button id="submit" value="submit">submit</button>
+            </form>
+        </section>
 
-      <!-- Skills Table -->
-      <section id="skills">
-        <h3>Technical Skills</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Skill</th>
-              <th>Level</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <td>PYTHON</td>
-              <td>Beginner</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!-- Contact Section -->
-      <section id="contact">
-        <h2>Contact Me</h2>
-
-        <form>
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            placeholder="Your Name"
-          />
-
-          <br /><br />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="Your email address"
-          />
-
-          <br /><br />
-
-          <label for="message">Message:</label>
-          <textarea
-            name="message"
-            id="message"
-            required
-            placeholder="Your message"
-            rows="2"
-            cols="20"
-          ></textarea>
-
-          <br /><br />
-
-          <button type="submit">Send</button>
-        </form>
-      </section>
     </main>
 
-    <!--Footer-->
+<!-- Footer -->
     <footer>
-      <p>&copy; Parth Singh. All rights reserved.</p>
-      <p><a href="#top">Back to top</a></p>
+        <p>&copy; 2025 Parth Singh . All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
