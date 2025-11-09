@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip Link to main content -->
+    <a href="#main-content">Skip to main content</a>
+
+    <!-- Header and Navigation -->
+    <header>
+      <h1>Parth Singh</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          I'm Parth Singh, i am a web development student.This is my personal
+          portfolio website.
+        </p>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="Photo.jpeg" alt="Parth's Photo" height="250" />
+        <p>
+          I am passionate about learning web development and building new
+          projects.
+        </p>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>My Projects</h2>
+
+        <article>
+          <h3>Audio/Video Player Page</h3>
+          <p>
+            I used audio and video tags and set controls so user can play/pause.
+          </p>
+        </article>
+
+        <article>
+          <h3>Portfolio Website</h3>
+          <p>
+            A personal portfolio site using semantic HTML and accessible markup.
+          </p>
+        </article>
+
+        <article>
+          <h3>Contact page</h3>
+          <p>
+            A form webpage with fields like name, email and message for
+            practicing form handling.
+          </p>
+        </article>
+      </section>
+
+      <!-- Skills Table -->
+      <section id="skills">
+        <h3>Technical Skills</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>PYTHON</td>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Your Name"
+          />
+
+          <br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Your email address"
+          />
+
+          <br /><br />
+
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            required
+            placeholder="Your message"
+            rows="2"
+            cols="20"
+          ></textarea>
+
+          <br /><br />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <p>&copy; Parth Singh. All rights reserved.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </body>
+</html>
