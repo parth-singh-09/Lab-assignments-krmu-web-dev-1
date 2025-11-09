@@ -15,7 +15,7 @@ body {
 
 /* ===== Header & Navigation ===== */
 header {
-  background-color: #81924a;
+  background-color: #eb6905;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #04162c;
+  background-color: #773e04;
 }
 
 /* ===== Sections ===== */
@@ -60,11 +60,11 @@ section {
 }
 
 /* ===== Hero Section ===== */
-#hero {
+#Hero {
   text-align: center;
 }
 
-#hero h2 {
+#Hero h2 {
   font-size: 1.8rem;
   color: #3b3f46;
 }
@@ -78,6 +78,20 @@ section {
   margin: 20px auto;
   border-radius: 50%;
   border: 3px solid #3b3f46;
+}
+
+/* ===== Projects Section ===== */
+#project ul {
+  list-style: none;
+  padding: 0;
+}
+
+#project li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  border-left: 4px solid #3b3f46;
+  border-radius: 5px;
 }
 
 /* ===== Skills Table ===== */
@@ -97,6 +111,10 @@ section {
 #skills th {
   background-color: #3b3f46;
   color: white;
+}
+
+#skills tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 /* ===== Contact Form ===== */
@@ -158,3 +176,15 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* ===== Responsive Tweaks ===== */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  section {
+    padding: 20px 15px;
+  }
+}
