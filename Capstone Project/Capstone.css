@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #FAFAFF;
+    color: #2D3436;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #4A90E2;
+}
+
+/* Navigation */
+header {
+    background: #4A90E2;
+    padding: 20px 0;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #FFDD59;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(#4a90e287, #ff6b6b87),
+                url('https://via.placeholder.com/1400x600');
+    background-size: cover;
+    padding: 120px 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero .btn {
+    background: #FF6B6B;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background: #1DD1A1;
+    color: white;
+}
+
+/* Courses */
+.course-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.course-card .btn {
+    background: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.course-card .btn:hover {
+    background: #FF6B6B;
+}
+
+/* Testimonials */
+.testimonials {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    flex: 1;
+    min-width: 260px;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+}
+
+/* Pricing */
+.pricing-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.pricing-card {
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+}
+
+.pricing-card.popular {
+    border: 3px solid #4A90E2;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card li {
+    margin: 10px 0;
+}
+
+.pricing-card .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4A90E2;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pricing-card .btn:hover {
+    background: #FF6B6B;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #CCC;
+}
+
+.contact-form button {
+    background: #4A90E2;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form button:hover {
+    background: #1DD1A1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4A90E2;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+    }
+}
